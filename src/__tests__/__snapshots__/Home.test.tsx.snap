@@ -1,0 +1,68 @@
+// Vitest Snapshot v1
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center space-y-8 px-[10vw] py-[10vh] md:flex-row md:space-y-0 md:space-x-8 lg:space-x-12"
+  >
+    <div
+      class="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 dark:bg-white/5 md:w-48 lg:w-56"
+    >
+      <img
+        alt="Profile photo"
+        data-nimg="1"
+        decoding="async"
+        height="224"
+        sizes="(min-width: 1024px) 224px, (min-width: 768px) 192px, 144px"
+        src="https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=3840"
+        srcset="https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=16 16w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=32 32w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=48 48w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=64 64w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=96 96w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=128 128w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=256 256w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=384 384w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=640 640w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=750 750w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=828 828w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=1080 1080w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=1200 1200w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=1920 1920w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=2048 2048w, https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=3840 3840w"
+        style="color: transparent;"
+        width="224"
+      />
+    </div>
+    <div
+      class="text-center md:text-left"
+    >
+      <h1
+        class="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl"
+      >
+        Nicholas DeVries
+      </h1>
+      <p
+        class="text-lg text-black/60 dark:text-white/60 md:text-xl lg:text-2xl"
+      >
+        Staff Software Engineer at
+         
+        <a
+          class="underline transition-colors hover:text-black dark:hover:text-white"
+          href="https://peak6.com/"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+        >
+          PEAK6
+        </a>
+      </p>
+      <div
+        class="mx-auto mt-8 flex w-48 flex-col space-y-4 md:mt-6 md:w-auto md:flex-row md:space-x-4 md:space-y-0"
+      >
+        <a
+          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded bg-black/5 px-4 font-semibold text-black outline-none ring-blue-500 ring-offset-2 ring-offset-white transition-colors hover:bg-black/10 focus-visible:ring-2 dark:bg-white/5 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-white/10"
+          href="https://www.linkedin.com/in/nicholas-devries/"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a
+          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded bg-black/5 px-4 font-semibold text-black outline-none ring-blue-500 ring-offset-2 ring-offset-white transition-colors hover:bg-black/10 focus-visible:ring-2 dark:bg-white/5 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-white/10"
+          href="https://github.com/nicholasdevries"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
