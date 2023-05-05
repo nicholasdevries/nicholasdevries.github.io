@@ -3,7 +3,7 @@ import { Button } from "../components/Button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center space-y-8 px-[10vw] py-[10vh] md:flex-row md:space-y-0 md:space-x-8 lg:space-x-12">
+    <div className="flex flex-col items-center space-y-8 px-[10vw] py-[10vh] md:flex-row md:space-x-8 md:space-y-0 lg:space-x-12">
       <div className="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 dark:bg-white/5 md:w-48 lg:w-56">
         <Image
           src="https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b"
