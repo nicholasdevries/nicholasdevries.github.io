@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { expect, test } from "vitest";
-import Home from "../pages";
+import Home from "../app/page";
 
 const { container, getByRole } = render(<Home />);
 
