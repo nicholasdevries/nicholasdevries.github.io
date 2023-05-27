@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 import colors from "tailwindcss/colors";
@@ -7,26 +8,18 @@ import "../styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Nicholas DeVries",
+  description: "Personal site of Nicholas DeVries",
+  themeColor: [
+    { color: colors.gray["50"], media: "(prefers-color-scheme: light)" },
+    { color: colors.gray["900"], media: "(prefers-color-scheme: dark)" },
+  ],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <title>Nicholas DeVries</title>
-        <meta name="description" content="Personal site of Nicholas DeVries" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          key="theme-color-light"
-          name="theme-color"
-          content={colors.gray["50"]}
-          media="(prefers-color-scheme: light)"
-        />
-        <meta
-          key="theme-color-dark"
-          name="theme-color"
-          content={colors.gray["900"]}
-          media="(prefers-color-scheme: dark)"
-        />
-      </head>
       <body
         className={clsx(
           inter.className,
