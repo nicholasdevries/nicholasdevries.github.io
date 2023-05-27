@@ -14,7 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>Nicholas DeVries</title>
         <meta name="description" content="Personal site of Nicholas DeVries" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta
           key="theme-color-light"
           name="theme-color"
