@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "next": "13.4.7",
+    "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -20,13 +20,13 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@testing-library/react": "^14.0.0",
-    "@types/node": "20.3.3",
+    "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "@vitejs/plugin-react": "^4.0.1",
+    "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.14",
     "eslint": "8.44.0",
-    "eslint-config-next": "13.4.7",
+    "eslint-config-next": "13.4.9",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
@@ -36,7 +36,7 @@
     "simple-git-hooks": "^2.8.1",
     "tailwindcss": "^3.3.2",
     "typescript": "5.1.6",
-    "vitest": "^0.32.4"
+    "vitest": "^0.33.0"
   },
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
