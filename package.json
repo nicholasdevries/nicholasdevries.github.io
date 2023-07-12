@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "format": "prettier . --write --cache",
     "start": "next start",
     "lint": "next lint",
     "prepare": "simple-git-hooks",
@@ -14,7 +15,8 @@
     "clsx": "^1.2.1",
     "next": "13.4.9",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.13.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
@@ -29,11 +31,11 @@
     "eslint-config-next": "13.4.9",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.2.3",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "simple-git-hooks": "^2.8.1",
     "tailwindcss": "^3.3.2",
     "typescript": "5.1.6",

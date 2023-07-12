@@ -1,10 +1,10 @@
-import clsx from "clsx";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 import colors from "tailwindcss/colors";
 import { BannerImage } from "../components/BannerImage";
 import "../styles/globals.css";
+import { clsx } from "../lib/clsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={clsx(
           inter.className,
-          "bg-white text-black antialiased dark:bg-gray-800 dark:text-white"
+          "bg-white text-black antialiased dark:bg-gray-800 dark:text-white",
         )}
       >
         <div className={"absolute inset-0 opacity-5 blur-3xl dark:opacity-10"} aria-hidden="true">
