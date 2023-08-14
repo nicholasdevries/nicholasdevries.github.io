@@ -19,7 +19,7 @@
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.6.6",
     "@testing-library/react": "^14.0.0",
     "@types/node": "20.4.2",
