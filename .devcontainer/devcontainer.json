@@ -1,0 +1,26 @@
+{
+	"name": "Personal landing page",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"bradlc.vscode-tailwindcss",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"mjmlio.vscode-mjml"
+			]
+		}
+	},
+	"forwardPorts": [
+		3000
+	],
+	"portsAttributes": {
+		"3000": {
+			"label": "Application",
+			"onAutoForward": "openBrowser"
+		}
+	},
+	"updateContentCommand": "npm install",
+	"postAttachCommand": "npm run dev"
+}

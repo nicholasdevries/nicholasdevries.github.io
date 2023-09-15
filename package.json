@@ -45,8 +45,5 @@
   "simple-git-hooks": {
     "commit-msg": "npx commitlint --edit",
     "pre-commit": "npx lint-staged"
-  },
-  "volta": {
-    "node": "18.14.0"
   }
 }

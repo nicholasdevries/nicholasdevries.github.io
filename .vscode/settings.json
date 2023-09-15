@@ -4,9 +4,6 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "editor.rulers": [
-    100
-  ],
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -17,17 +14,12 @@
     "**/src/**/*.css": "tailwindcss"
   },
   "[javascript][javascriptreact][typescript][typescriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+      100
+    ],
   },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "peacock.remoteColor": "#f9e64f",
-  "workbench.colorCustomizations": {
-    "commandCenter.border": "#15202b99",
-    "titleBar.activeBackground": "#f9e64f",
-    "titleBar.activeForeground": "#15202b",
-    "titleBar.inactiveBackground": "#f9e64f99",
-    "titleBar.inactiveForeground": "#15202b99"
   }
 }
