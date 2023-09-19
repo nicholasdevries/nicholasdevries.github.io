@@ -15,12 +15,5 @@
 	"forwardPorts": [
 		3000
 	],
-	"portsAttributes": {
-		"3000": {
-			"label": "Application",
-			"onAutoForward": "openBrowser"
-		}
-	},
-	"updateContentCommand": "npm install",
-	"postAttachCommand": "npm run dev"
+	"updateContentCommand": "npm install"
 }
