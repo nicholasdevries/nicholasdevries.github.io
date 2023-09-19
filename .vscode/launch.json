@@ -11,7 +11,7 @@
                 "dev"
             ],
             "serverReadyAction": {
-                "pattern": "started server on .+, url: (https?://.+)",
+                "pattern": "Local:.+(https?://.+)",
                 "uriFormat": "%s",
                 "action": "openExternally"
             }
