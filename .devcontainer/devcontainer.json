@@ -8,7 +8,7 @@
 				"bradlc.vscode-tailwindcss",
 				"dbaeumer.vscode-eslint",
 				"esbenp.prettier-vscode",
-				"mjmlio.vscode-mjml"
+				"ZixuanChen.vitest-explorer"
 			]
 		}
 	},
