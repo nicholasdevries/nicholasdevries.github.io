@@ -14,7 +14,8 @@
                 "pattern": "Local:.+(https?://.+)",
                 "uriFormat": "%s",
                 "action": "openExternally"
-            }
+            },
+            "console": "integratedTerminal"
         }
     ]
 }

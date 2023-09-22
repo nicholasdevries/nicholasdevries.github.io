@@ -11,7 +11,7 @@
     "typescriptreact"
   ],
   "files.associations": {
-    "**/src/**/*.css": "tailwindcss"
+    "tailwind.css": "tailwindcss"
   },
   "[javascript][javascriptreact][typescript][typescriptreact]": {
     "editor.formatOnSave": false,
