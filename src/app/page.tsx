@@ -4,7 +4,7 @@ import { ProfileImage } from "../components/ProfileImage";
 export default function Home() {
   return (
     <div className="flex flex-col items-center space-y-8 px-[10vw] py-[10vh] md:flex-row md:space-x-8 md:space-y-0 lg:space-x-12">
-      <div className="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 dark:bg-white/5 md:w-48 lg:w-56">
+      <div className="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 drop-shadow-2xl dark:bg-white/5 md:w-48 lg:w-56">
         <ProfileImage />
       </div>
       <div className="text-center md:text-left">
