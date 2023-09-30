@@ -1,5 +1,5 @@
 {
-	"name": "Personal landing page",
+	"name": "nicholasdevries.github.io",
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:18",
 	"customizations": {
 		"vscode": {
@@ -14,6 +14,5 @@
 	},
 	"forwardPorts": [
 		3000
-	],
-	"updateContentCommand": "npm install"
+	]
 }

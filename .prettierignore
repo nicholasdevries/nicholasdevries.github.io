@@ -1,8 +1,11 @@
-.next/
 .devcontainer/
+.next/
 .vscode/
 node_modules/
-public/
 out/
+public/
 
+.eslintrc.json
+package.json
 package-lock.json
+tsconfig.json

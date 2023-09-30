@@ -15,7 +15,8 @@
                 "uriFormat": "%s",
                 "action": "openExternally"
             },
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "preLaunchTask": "npm install"
         }
     ]
 }
