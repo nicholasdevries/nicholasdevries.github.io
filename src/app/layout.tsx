@@ -1,5 +1,5 @@
 import "../tailwind.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import React from "react";
 import colors from "tailwindcss/colors";
@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nicholas DeVries",
   description: "Personal site of Nicholas DeVries",
+};
+
+export const viewport: Viewport = {
   themeColor: [
     { color: colors.gray["50"], media: "(prefers-color-scheme: light)" },
     { color: colors.gray["900"], media: "(prefers-color-scheme: dark)" },
