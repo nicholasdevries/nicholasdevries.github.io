@@ -6,7 +6,7 @@ exports[`matches snapshot 1`] = `
     class="flex flex-col items-center space-y-8 px-[10vw] py-[10vh] md:flex-row md:space-x-8 md:space-y-0 lg:space-x-12"
   >
     <div
-      class="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 drop-shadow-2xl dark:bg-white/5 md:w-48 lg:w-56"
+      class="w-36 max-w-full shrink-0 overflow-hidden rounded-full bg-black/5 drop-shadow-2xl md:w-48 lg:w-56 dark:bg-white/5"
     >
       <img
         alt="Profile photo"
@@ -30,7 +30,7 @@ exports[`matches snapshot 1`] = `
         Nicholas DeVries
       </h1>
       <p
-        class="text-lg tracking-tight text-black/60 dark:text-white/60 md:text-xl lg:text-2xl"
+        class="text-lg tracking-tight text-black/60 md:text-xl lg:text-2xl dark:text-white/60"
       >
         Staff Software Engineer at
          
