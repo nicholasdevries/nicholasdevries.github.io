@@ -5,10 +5,9 @@
     "next/core-web-vitals",
     "plugin:import/recommended",
     "plugin:tailwindcss/recommended",
-    "plugin:prettier/recommended"
+    "prettier"
   ],
   "rules": {
-    "prettier/prettier": "warn",
     "import/order": [
       "warn",
       {
