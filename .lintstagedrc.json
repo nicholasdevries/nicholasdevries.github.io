@@ -1,3 +1,0 @@
-{
-  "src/**/*.{css,ts,tsx}": "prettier --write --cache"
-}
