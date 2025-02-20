@@ -2,5 +2,6 @@
  * @type {import('lint-staged').Configuration}
  */
 export default {
-  "src/**/*.{css,ts,tsx}": "prettier --write --cache",
+  "*": "prettier --write --cache",
+  "*.{ts,tsx}": "eslint --fix",
 };
