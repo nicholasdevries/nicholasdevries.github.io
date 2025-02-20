@@ -12,7 +12,6 @@ exports[`matches snapshot 1`] = `
         alt="Profile photo"
         data-nimg="1"
         decoding="async"
-        fetchpriority="high"
         height="224"
         sizes="(min-width: 1024px) 224px, (min-width: 768px) 192px, 144px"
         src="https://s.gravatar.com/avatar/f3f57560bd1632d2d2329b3377ef106b?s=3840"
