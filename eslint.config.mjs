@@ -1,46 +1,28 @@
-import eslint from "@eslint/js";
-import nextPlugin from "@next/eslint-plugin-next";
-import eslintPluginImportX from "eslint-plugin-import-x";
-import reactPlugin from "eslint-plugin-react";
-import tailwind from "eslint-plugin-tailwindcss";
-import tseslint, { configs as tseslintconfigs } from "typescript-eslint";
+import nextPlugin from '@next/eslint-plugin-next'
+import { tanstackConfig } from '@tanstack/eslint-config'
+import reactPlugin from 'eslint-plugin-react'
+import tailwind from 'eslint-plugin-tailwindcss'
+import reactHooks from 'eslint-plugin-react-hooks'
 
 /** @type {import('eslint').Linter.Config[]} */
-export default tseslint.config(
+export default [
   // Base
-  eslint.configs.recommended,
-  // Typescript
-  tseslintconfigs.recommended,
+  ...tanstackConfig,
   // Next
   {
     plugins: {
-      "@next/next": nextPlugin,
+      '@next/next': nextPlugin,
     },
     rules: {
       ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
+      ...nextPlugin.configs['core-web-vitals'].rules,
     },
   },
   // React
   reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat["jsx-runtime"],
-  { settings: { react: { version: "detect" } } },
-  // Imports
-  eslintPluginImportX.flatConfigs.recommended,
-  eslintPluginImportX.flatConfigs.typescript,
-  {
-    rules: {
-      "import-x/order": [
-        "warn",
-        {
-          alphabetize: {
-            order: "asc",
-            caseInsensitive: true,
-          },
-        },
-      ],
-    },
-  },
+  reactPlugin.configs.flat['jsx-runtime'],
+  { settings: { react: { version: 'detect' } } },
+  reactHooks.configs['recommended-latest'],
   // Tailwind
-  ...tailwind.configs["flat/recommended"],
-);
+  ...tailwind.configs['flat/recommended'],
+]

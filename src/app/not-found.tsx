@@ -1,10 +1,10 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "../components/Button";
+import Link from 'next/link'
+import { Button } from '../components/Button'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Page not found — Nicholas DeVries",
-};
+  title: 'Page not found — Nicholas DeVries',
+}
 
 export default function NotFound() {
   return (
@@ -17,5 +17,5 @@ export default function NotFound() {
         </Button>
       </div>
     </div>
-  );
+  )
 }

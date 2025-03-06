@@ -1,5 +1,5 @@
-import { Button } from "../components/Button";
-import { ProfileImage } from "../components/ProfileImage";
+import { Button } from '../components/Button'
+import { ProfileImage } from '../components/ProfileImage'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
           Nicholas DeVries
         </h1>
         <p className="text-lg tracking-tight text-black/60 md:text-xl lg:text-2xl dark:text-white/60">
-          Staff Software Engineer at{" "}
+          Staff Software Engineer at{' '}
           <a
             href="https://peak6.com/"
             target="_blank"
@@ -42,5 +42,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }

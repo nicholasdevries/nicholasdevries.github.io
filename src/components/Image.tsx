@@ -1,7 +1,8 @@
-"use client";
+'use client'
 
-import NextImage, { ImageProps } from "next/image";
+import NextImage from 'next/image'
+import type { ImageProps } from 'next/image'
 
-export const Image = (props: Omit<ImageProps, "loader">) => (
+export const Image = (props: Omit<ImageProps, 'loader'>) => (
   <NextImage {...props} loader={({ src }) => src} />
-);
+)

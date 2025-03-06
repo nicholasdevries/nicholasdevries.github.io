@@ -15,8 +15,7 @@
                 "uriFormat": "%s",
                 "action": "openExternally"
             },
-            "console": "integratedTerminal",
-            "preLaunchTask": "npm install"
+            "console": "integratedTerminal"
         },
         {
             "name": "Debug with chrome",

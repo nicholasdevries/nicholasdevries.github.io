@@ -1,6 +1,6 @@
-"use client";
+'use client'
 
-import Image from "next/image";
+import Image from 'next/image'
 
 export const ProfileImage = ({ className }: { className?: string }) => (
   <Image
@@ -10,9 +10,9 @@ export const ProfileImage = ({ className }: { className?: string }) => (
     width={224}
     height={224}
     loader={({ src, width }) => {
-      return `${src}?s=${width}`;
+      return `${src}?s=${width}`
     }}
     priority
     sizes="(min-width: 1024px) 224px, (min-width: 768px) 192px, 144px"
   />
-);
+)
