@@ -13,9 +13,9 @@
     "test": "vitest --coverage"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^15.2.1",
+    "@next/eslint-plugin-next": "^15.2.2",
     "clsx": "^2.1.1",
-    "next": "15.2.1",
+    "next": "15.2.2",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "tailwind-merge": "^3.0.2"
