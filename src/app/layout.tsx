@@ -1,10 +1,10 @@
 import '../tailwind.css'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import type React from 'react'
 import colors from 'tailwindcss/colors'
 import { clsx } from '../lib/clsx'
 import styles from './layout.module.css'
-import type React from 'react'
-import type { Metadata, Viewport } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 

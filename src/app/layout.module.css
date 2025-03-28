@@ -1,5 +1,5 @@
 .glow {
-  background-image: url('../img/glow.png');
+  background-image: url("../img/glow.png");
   background-position: center;
   background-size: cover;
   filter: blur(75px);

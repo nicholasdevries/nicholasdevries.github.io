@@ -1,5 +1,5 @@
-import { clsx } from '../lib/clsx'
 import type React from 'react'
+import { clsx } from '../lib/clsx'
 
 type ButtonProps<T extends React.ElementType> = {
   as?: T

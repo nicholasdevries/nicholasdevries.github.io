@@ -1,18 +1,17 @@
 {
-	"name": "nicholasdevries.github.io",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:22",
-	"customizations": {
-		"vscode": {
-			"settings": {},
-			"extensions": [
-				"bradlc.vscode-tailwindcss",
-				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode",
-				"vitest.explorer"
-			]
-		}
-	},
-	"forwardPorts": [
-		3000
-	]
+  "name": "nicholasdevries.github.io",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "biomejs.biome",
+        "bradlc.vscode-tailwindcss",
+        "vitest.explorer"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ]
 }
