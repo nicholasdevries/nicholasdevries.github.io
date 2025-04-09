@@ -46,7 +46,7 @@ exports[`matches snapshot 1`] = `
         class="mx-auto mt-8 flex w-48 flex-col space-y-4 md:mt-6 md:w-auto md:flex-row md:space-x-4 md:space-y-0"
       >
         <a
-          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded bg-gray-100/50 px-4 font-semibold text-black outline-none ring-blue-500 ring-offset-2 ring-offset-white drop-shadow transition-colors hover:bg-gray-100/75 focus-visible:ring-2 dark:bg-gray-900/50 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-gray-900/75"
+          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded-sm bg-gray-100/50 px-4 font-semibold text-black outline-hidden ring-blue-500 ring-offset-2 ring-offset-white drop-shadow-sm transition-colors hover:bg-gray-100/75 focus-visible:ring-2 dark:bg-gray-900/50 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-gray-900/75"
           href="https://www.linkedin.com/in/nicholas-devries/"
           rel="noopener noreferrer nofollow"
           target="_blank"
@@ -54,7 +54,7 @@ exports[`matches snapshot 1`] = `
           LinkedIn
         </a>
         <a
-          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded bg-gray-100/50 px-4 font-semibold text-black outline-none ring-blue-500 ring-offset-2 ring-offset-white drop-shadow transition-colors hover:bg-gray-100/75 focus-visible:ring-2 dark:bg-gray-900/50 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-gray-900/75"
+          class="relative inline-flex h-10 cursor-pointer flex-nowrap items-center justify-center rounded-sm bg-gray-100/50 px-4 font-semibold text-black outline-hidden ring-blue-500 ring-offset-2 ring-offset-white drop-shadow-sm transition-colors hover:bg-gray-100/75 focus-visible:ring-2 dark:bg-gray-900/50 dark:text-white dark:ring-blue-400 dark:ring-offset-gray-800 dark:hover:bg-gray-900/75"
           href="https://github.com/nicholasdevries"
           rel="noopener noreferrer nofollow"
           target="_blank"
