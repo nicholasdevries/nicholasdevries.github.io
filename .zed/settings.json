@@ -5,10 +5,9 @@
   },
   "formatter": {
     "language_server": {
-        "name": "biome"
+      "name": "biome"
     }
   },
-  "language_servers": ["biome"],
   "lsp": {
     "biome": {
       "settings": {

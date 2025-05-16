@@ -24,12 +24,12 @@ exports[`matches snapshot 1`] = `
       class="text-center md:text-left"
     >
       <h1
-        class="text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl"
+        class="font-bold text-4xl tracking-tighter md:text-5xl lg:text-6xl"
       >
         Nicholas DeVries
       </h1>
       <p
-        class="text-lg tracking-tight text-black/60 md:text-xl lg:text-2xl dark:text-white/60"
+        class="text-black/60 text-lg tracking-tight md:text-xl lg:text-2xl dark:text-white/60"
       >
         Staff Software Engineer at
          

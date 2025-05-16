@@ -8,10 +8,10 @@ export default function Home() {
         <ProfileImage />
       </div>
       <div className="text-center md:text-left">
-        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
+        <h1 className="font-bold text-4xl tracking-tighter md:text-5xl lg:text-6xl">
           Nicholas DeVries
         </h1>
-        <p className="text-lg tracking-tight text-black/60 md:text-xl lg:text-2xl dark:text-white/60">
+        <p className="text-black/60 text-lg tracking-tight md:text-xl lg:text-2xl dark:text-white/60">
           Staff Software Engineer at{' '}
           <a
             href="https://peak6.com/"
