@@ -5,7 +5,6 @@
     "ignore": ["node_modules", "out", ".next", ".vscode"]
   },
   "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
-  "javascript": { "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" } },
   "linter": {
     "rules": {
       "nursery": {
@@ -18,7 +17,5 @@
       }
     }
   },
-  "organizeImports": {
-    "enabled": false
-  }
+  "javascript": { "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" } }
 }
