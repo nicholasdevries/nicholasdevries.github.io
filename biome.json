@@ -1,10 +1,20 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "include": ["src/*", "*.mjs", "*.js"],
-    "ignore": ["node_modules", "out", ".next", ".vscode"]
+    "includes": ["src/**/*", "*.mjs", "*.json", "!**/node_modules"]
   },
-  "formatter": { "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
   "linter": {
     "rules": {
       "nursery": {
@@ -14,8 +24,25 @@
             "functions": ["clsx"]
           }
         }
+      },
+      "style": {
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error"
       }
     }
   },
-  "javascript": { "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" } }
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
+    }
+  }
 }
