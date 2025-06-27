@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "includes": ["src/**/*", "*.mjs", "*.json", "!tsconfig.json", "!**/node_modules"]
+    "includes": ["src/**/*", "*.mjs", "*.json", "!tsconfig.json"]
   },
   "assist": {
     "actions": {
@@ -16,6 +16,9 @@
     "lineWidth": 100
   },
   "linter": {
+    "domains": {
+      "project": "recommended"
+    },
     "rules": {
       "nursery": {
         "useSortedClasses": {
