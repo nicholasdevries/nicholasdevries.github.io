@@ -1,6 +1,6 @@
 {
   "name": "nicholasdevries.github.io",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
   "customizations": {
     "vscode": {
       "settings": {},
