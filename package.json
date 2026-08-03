@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
+  "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee",
   "scripts": {
     "build": "next build",
     "check": "biome check --write",
@@ -22,13 +22,12 @@
     "@biomejs/biome": "2.4.16",
     "@tailwindcss/postcss": "^4.3.0",
     "@testing-library/react": "^16.3.2",
-    "@types/node": "^25.9.1",
+    "@types/node": "^26.1.2",
     "@types/react": "19.2.16",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
     "@vitest/coverage-v8": "^4.1.8",
     "jsdom": "^29.1.1",
-    "lefthook": "^2.1.9",
     "tailwindcss": "^4.3.0",
     "typescript": "6.0.3",
     "vitest": "^4.1.8"
