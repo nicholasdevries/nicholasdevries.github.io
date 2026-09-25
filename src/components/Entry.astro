@@ -19,4 +19,5 @@ const { label, target = '_blank', rel = 'noopener noreferrer nofollow', ...props
   <span class="kicker col-span-2 transition-colors group-hover:text-accent sm:col-span-1">{label}</span>
   <span><slot /></span>
   <span class="font-mono text-ink-faint text-meta transition-colors group-hover:text-accent" aria-hidden="true">↗</span>
+  {target === '_blank' && <span class="sr-only">(opens in new tab)</span>}
 </a>

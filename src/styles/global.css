@@ -44,7 +44,7 @@
     --color-paper: #15171a;
     --color-ink: #ddd8cd;
     --color-ink-muted: #9b958a;
-    --color-ink-faint: #8a8377;
+    --color-ink-faint: #968f82;
     --color-rule: #2b2f35;
     --color-accent: #8cc79a;
     --color-glow: #1f242b;
@@ -73,6 +73,11 @@
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       opacity: var(--grain-opacity);
       mix-blend-mode: var(--grain-blend);
+
+      /* High-contrast themes replace the palette; noise on top would only muddy them. */
+      @media (forced-colors: active) {
+        display: none;
+      }
     }
   }
 
