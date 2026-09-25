@@ -3,15 +3,14 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
   "customizations": {
     "vscode": {
-      "settings": {},
       "extensions": [
+        "astro-build.astro-vscode",
         "biomejs.biome",
-        "bradlc.vscode-tailwindcss",
-        "vitest.explorer"
+        "bradlc.vscode-tailwindcss"
       ]
     }
   },
   "forwardPorts": [
-    3000
+    4321
   ]
 }

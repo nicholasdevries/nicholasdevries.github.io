@@ -1,0 +1,18 @@
+---
+import Masthead from '../components/Masthead.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Page not found — Nicholas DeVries">
+  <Masthead />
+  <article class="max-w-xl">
+    <h1 class="mt-2 text-title">Page not found</h1>
+    <hr class="mt-4 h-0.5 w-14 border-0 bg-accent" />
+    <p class="mt-8 text-ink-muted">
+      There’s nothing at this address. It may have moved, or it never existed.
+    </p>
+    <a href="/" class="kicker mt-6 inline-block text-accent no-underline"
+      ><span aria-hidden="true">←</span> Return home</a
+    >
+  </article>
+</Layout>

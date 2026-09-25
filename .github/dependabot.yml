@@ -4,6 +4,10 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    ignore:
+      # @astrojs/check doesn't support TypeScript 7 yet (withastro/astro#17268)
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
     groups:
       dev-deps:
         dependency-type: 'development'

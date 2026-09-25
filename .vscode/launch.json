@@ -2,39 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug",
-      "type": "node",
+      "command": "./node_modules/.bin/astro dev",
+      "name": "Development server",
       "request": "launch",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": [
-        "run-script",
-        "dev"
-      ],
-      "serverReadyAction": {
-        "pattern": "Local:.+(https?://.+)",
-        "uriFormat": "%s",
-        "action": "openExternally"
-      },
-      "console": "integratedTerminal"
-    },
-    {
-      "name": "Debug with chrome",
-      "type": "node",
-      "request": "launch",
-      "program": "${workspaceFolder}/node_modules/.bin/next",
-      "runtimeArgs": [
-        "--inspect"
-      ],
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "serverReadyAction": {
-        "action": "debugWithChrome",
-        "killOnServerStop": true,
-        "pattern": "- Local:.+(https?://.+)",
-        "uriFormat": "%s",
-        "webRoot": "${workspaceFolder}"
-      }
+      "type": "node-terminal"
     }
   ]
 }

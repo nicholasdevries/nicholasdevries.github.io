@@ -1,0 +1,35 @@
+---
+import { Font } from 'astro:assets'
+import '../styles/global.css'
+
+type Props = {
+  title: string
+  description?: string
+}
+
+const { title, description = 'Personal site of Nicholas DeVries' } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Keep in sync with --color-paper in global.css; meta tags can't read CSS variables. -->
+    <meta name="theme-color" content="#f5f2ec" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <Font cssVariable="--font-newsreader" preload />
+    <Font cssVariable="--font-jetbrains-mono" preload />
+  </head>
+  <body class="min-h-dvh font-serif text-ink antialiased">
+    <main class="@container mx-auto w-full max-w-156 px-6 pb-16">
+      <!-- text-body lives here, not on main: cqi resolves against an ancestor container, so on
+           main itself it would fall back to the viewport. -->
+      <div class="text-body">
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>

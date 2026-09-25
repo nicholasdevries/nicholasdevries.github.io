@@ -1,6 +1,6 @@
 # nicholasdevries.github.io
 
-My personal site — a single static page built with Next.js and deployed to GitHub Pages.
+My personal site — a single static page built with Astro and deployed to GitHub Pages.
 
 Live at [nicholasdevries.github.io](https://nicholasdevries.github.io).
 
@@ -13,31 +13,32 @@ pnpm install
 pnpm dev
 ```
 
-Then open http://localhost:3000.
+Then open http://localhost:4321.
 
 ## Scripts
 
-| Command      | What it does                                        |
-| ------------ | --------------------------------------------------- |
-| `pnpm dev`   | Dev server with hot reload                          |
-| `pnpm build` | Static export to `out/`                             |
-| `pnpm start` | Serve the built `out/` directory                    |
-| `pnpm test`  | Vitest + coverage (watches locally, one-shot in CI) |
-| `pnpm check` | Biome lint + format, writing fixes                  |
-| `pnpm ci`    | Biome check without writing (what CI runs)          |
+| Command          | What it does                               |
+| ---------------- | ------------------------------------------ |
+| `pnpm dev`       | Dev server with hot reload                 |
+| `pnpm build`     | Static build to `dist/`                    |
+| `pnpm preview`   | Serve the built `dist/` directory          |
+| `pnpm typecheck` | `astro check` (TypeScript diagnostics)     |
+| `pnpm check`     | Biome lint + format, writing fixes         |
+| `pnpm ci`        | Biome check without writing (what CI runs) |
 
 ## Layout
 
 ```
 src/
-  app/         Next.js App Router — page, layout, 404, robots, sitemap
-  components/  Button, Image, ProfileImage
-  lib/         clsx helper (clsx + tailwind-merge)
-  __tests__/   Vitest tests and snapshots
+  pages/       Routes — index, 404
+  layouts/     Layout (head, fonts, background)
+  components/  Masthead, Entry
+  styles/      global.css (Tailwind entry)
+public/        Static files copied as-is — favicon, robots.txt
 ```
 
 ## Deploying
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and
-publishes `out/` to GitHub Pages. Pull requests run lint, build, and tests via
-`.github/workflows/ci.yml`.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds with
+[`withastro/action`](https://github.com/withastro/action) and publishes `dist/` to GitHub
+Pages. Pull requests run lint, type check, and build via `.github/workflows/ci.yml`.

@@ -1,0 +1,33 @@
+---
+import Entry from '../components/Entry.astro'
+import Masthead from '../components/Masthead.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Nicholas DeVries">
+  <Masthead heading />
+  <section class="border-accent border-l-2 pl-4">
+    <p class="kicker text-accent">Currently</p>
+    <p class="mt-1.5 text-balance text-lead">
+      Staff Software Engineer at{' '}
+      <a href="https://peak6.com/" target="_blank" rel="noopener noreferrer nofollow">PEAK6</a>
+    </p>
+  </section>
+  <section class="mt-14">
+    <h2 class="kicker border-rule border-b pb-2">Elsewhere</h2>
+    <ul>
+      <li class="border-rule border-b">
+        <Entry
+          href="https://github.com/nicholasdevries"
+          label="GitHub">github.com/nicholasdevries</Entry
+        >
+      </li>
+      <li class="border-rule border-b">
+        <Entry
+          href="https://www.linkedin.com/in/nicholas-devries/"
+          label="LinkedIn">linkedin.com/in/nicholas-devries</Entry
+        >
+      </li>
+    </ul>
+  </section>
+</Layout>
