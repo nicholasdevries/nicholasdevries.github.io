@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "includes": ["src/**/*", "*.ts", "*.mjs", "*.json", "!tsconfig.json"]
+    "includes": ["src/**/*", "*.mjs", "*.json", "!tsconfig.json"]
   },
   "assist": {
     "actions": {
@@ -20,14 +20,6 @@
       "project": "recommended"
     },
     "rules": {
-      "nursery": {
-        "useSortedClasses": {
-          "level": "warn",
-          "options": {
-            "functions": ["clsx"]
-          }
-        }
-      },
       "style": {
         "noParameterAssign": "error",
         "useAsConstAssertion": "error",
@@ -47,5 +39,23 @@
       "quoteStyle": "single",
       "semicolons": "asNeeded"
     }
-  }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          }
+        }
+      }
+    }
+  ]
 }

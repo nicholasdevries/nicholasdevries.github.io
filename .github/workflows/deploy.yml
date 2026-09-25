@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: 'pages'
@@ -19,14 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Setup
-        uses: ./.github/actions/setup
-      - name: Build
-        run: pnpm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+      - name: Read Node version
+        id: node
+        run: echo "version=$(cat .node-version)" >> "$GITHUB_OUTPUT"
+      - name: Install, build, and upload
+        uses: withastro/action@v6
         with:
-          path: ./out
+          node-version: ${{ steps.node.outputs.version }}
 
   deploy:
     needs: build

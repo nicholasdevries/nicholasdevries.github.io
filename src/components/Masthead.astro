@@ -1,0 +1,22 @@
+---
+type Props = {
+  // The home page's name is its h1; elsewhere the name is a link home.
+  heading?: boolean
+}
+
+const { heading = false } = Astro.props
+---
+
+<header class="mb-12 max-w-xl pt-10">
+  {
+    heading ? (
+      <h1 class="text-balance text-title">Nicholas DeVries</h1>
+    ) : (
+      <p class="text-lead">
+        <a href="/" class="no-underline">
+          Nicholas DeVries
+        </a>
+      </p>
+    )
+  }
+</header>

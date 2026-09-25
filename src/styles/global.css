@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* Editorial "ink on paper" tokens: warm paper, near-black ink in three strengths, hairline
+   rules, and a single forest-green accent. Dark mode swaps the token values, not the classes. */
+@theme inline {
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@theme {
+  --color-paper: #f5f2ec;
+  --color-ink: #1a1815;
+  --color-ink-muted: #565046;
+  --color-ink-faint: #6f685b;
+  --color-rule: #dcd5c5;
+  --color-accent: #2f5d3a;
+  --color-glow: #fffdf6;
+
+  /* Paper grain: noise darkens light paper, and lightens dark paper. */
+  --grain-opacity: 0.09;
+  --grain-blend: multiply;
+
+  /* Fluid type scale: each role clamps between its size at a 312px and a 576px column (the
+     main column's content width at a 360px viewport and at its max width). cqi resolves
+     against the nearest container, `main`, so type follows the column rather than the
+     viewport; rem keeps browser zoom and the user's default font size working. Headings
+     grow faster than body text, so the hierarchy opens up as the column widens. */
+  --text-kicker: clamp(0.71875rem, 0.571rem + 0.758cqi, 0.84375rem);
+  --text-meta: clamp(0.8125rem, 0.665rem + 0.758cqi, 0.9375rem);
+  --text-body: clamp(1rem, 0.705rem + 1.515cqi, 1.25rem);
+  --text-body--line-height: 1.62;
+  --text-lead: clamp(1.375rem, 0.784rem + 3.03cqi, 1.875rem);
+  --text-lead--line-height: 1.15;
+  --text-lead--letter-spacing: -0.02em;
+  --text-lead--font-weight: 600;
+  --text-title: clamp(2rem, 0.523rem + 7.576cqi, 3.25rem);
+  --text-title--line-height: 1.08;
+  --text-title--letter-spacing: -0.025em;
+  --text-title--font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #15171a;
+    --color-ink: #ddd8cd;
+    --color-ink-muted: #9b958a;
+    --color-ink-faint: #8a8377;
+    --color-rule: #2b2f35;
+    --color-accent: #8cc79a;
+    --color-glow: #1f242b;
+    --grain-opacity: 0.05;
+    --grain-blend: screen;
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    background-image: radial-gradient(75rem 32rem at 14% -6%, var(--color-glow), transparent 68%);
+    background-repeat: no-repeat;
+
+    /* Grain sits above the content so the ink looks printed onto the paper, not over it. */
+    &::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: var(--grain-opacity);
+      mix-blend-mode: var(--grain-blend);
+    }
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  a {
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.17em;
+    transition:
+      color 0.15s ease,
+      text-decoration-color 0.15s ease;
+
+    &:hover {
+      color: var(--color-accent);
+      text-decoration-thickness: 2px;
+    }
+  }
+}
+
+/* Small-caps-style mono label for kickers, keys, and metadata. */
+@utility kicker {
+  font-family: var(--font-mono);
+  font-size: var(--text-kicker);
+  font-weight: 500;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-faint);
+}

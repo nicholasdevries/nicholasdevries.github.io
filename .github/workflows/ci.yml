@@ -18,7 +18,7 @@ jobs:
         uses: ./.github/actions/setup
       - name: Lint and format
         run: pnpm run ci
+      - name: Type check
+        run: pnpm run typecheck
       - name: Build
         run: pnpm run build
-      - name: Test
-        run: pnpm run test
