@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
-    "@biomejs/biome": "2.6.4",
-    "@tailwindcss/vite": "^4.3.4",
-    "tailwindcss": "^4.3.4",
+    "@biomejs/biome": "2.6.7",
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
     "typescript": "6.0.3"
   }
 }
